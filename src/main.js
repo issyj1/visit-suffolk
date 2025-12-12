@@ -1,11 +1,6 @@
-// Import CSS (Vite handles this)
-import './style.css';
-
-// Import GSAP and ScrollTrigger
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-// Register the plugin
+import './style.css';       // CSS import
+import { gsap } from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 // Animate section headers (h1, h2, p)

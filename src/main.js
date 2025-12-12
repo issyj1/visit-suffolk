@@ -1,11 +1,16 @@
-import './style.css'; 
+// Import CSS (Vite handles this)
+import './style.css';
+
+// Import GSAP and ScrollTrigger
+import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-
+// Register the plugin
 gsap.registerPlugin(ScrollTrigger);
 
+// Animate section headers (h1, h2, p)
 gsap.utils.toArray(".section").forEach((section) => {
-  gsap.from(section.querySelector("h1, h2, p"), {
+  gsap.from(section.querySelectorAll("h1, h2, p"), {
     y: 200,
     opacity: 0,
     duration: 1,
@@ -19,9 +24,7 @@ gsap.utils.toArray(".section").forEach((section) => {
   });
 });
 
-
-
-
+// Animate elements with slide-left or slide-right
 gsap.utils.toArray(".slide-left, .slide-right").forEach((el) => {
   const startX = el.classList.contains("slide-left") ? -200 : 200;
 
@@ -29,7 +32,7 @@ gsap.utils.toArray(".slide-left, .slide-right").forEach((el) => {
     el,
     { x: startX, opacity: 0 },
     { 
-      x: 1, 
+      x: 0, 
       opacity: 1, 
       duration: 1,
       immediateRender: false,
@@ -44,45 +47,23 @@ gsap.utils.toArray(".slide-left, .slide-right").forEach((el) => {
   );
 });
 
-// Slide in from right and back out
-gsap.utils.toArray(".slide-right").forEach((el) => {
-  gsap.fromTo(el, 
-    { x: 300, opacity: 1 },
+// Optional extra animation for slide-left elements (if you want a slightly different effect)
+gsap.utils.toArray(".slide-left").forEach((el) => {
+  gsap.fromTo(
+    el,
+    { x: -200, opacity: 0 },
     { 
-      x: 0, 
-      opacity: 1, 
+      x: 0,
+      opacity: 1,
       duration: 1,
+      immediateRender: false,
       scrollTrigger: {
         trigger: el,
         start: "top 80%",
-        end: "bottom 30%",
+        end: "bottom 20%",
         toggleActions: "play reverse play reverse",
         scrub: true
       }
     }
   );
 });
-
-
-
-gsap.fromTo(el, 
-  { x: -200, opacity: 1 },
-  { 
-    x: 0, 
-    opacity: 1, 
-    duration: 1,
-    immediateRender: false,  // add this
-    scrollTrigger: {
-      trigger: el,
-      start: "top 80%",
-      end: "bottom 20%",
-      toggleActions: "play reverse play reverse",
-      scrub: true
-    }
-  }
-);
-
-
-
-
-

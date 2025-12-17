@@ -25,18 +25,18 @@ html, body {
 #section1 { 
   background-color: #aabac9;
   
-  background-image: url("src/assets/431A9488.jpg");
+  background-image: url("./assets/431A9488.jpg");
   background-size: cover;
   background-position: center;
   
  } /* teal */
 #section2 { background-color: #2a2b38;
-  background-image: url("src/assets/IMG_4379.jpg");
+  background-image: url("./assets/IMG_4379.jpg");
   background-size: cover;
   background-position: center;
  } /* blue */
 #section3 { background-color: #263326;
-  background-image: url("src/assets/IMG_4402.jpg");
+  background-image: url("./assets/IMG_4402.jpg");
   background-size: cover;
   background-position: center; } /* orange */
 
@@ -180,7 +180,7 @@ border-radius: 40px;
   font-weight: 2000;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: transparent;               /* hide the text color */
-  background-image: url('/assets/431A9412.jpg'); /* your image */
+  background-image: url('./assets/431A9412.jpg'); /* your image */
   background-size: cover;
   background-attachment: fixed;     /* fixed background for parallax effect */
   background-position: center;
@@ -189,7 +189,7 @@ border-radius: 40px;
 }
 
 .hero2, .hero-title2 {
-  background-image: url('/assets/431A9402.jpg'); /* same image as hero */
+  background-image: url('./assets/431A9402.jpg'); /* same image as hero */
 
 }
 

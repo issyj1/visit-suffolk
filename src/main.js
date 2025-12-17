@@ -62,14 +62,3 @@ gsap.utils.toArray(".slide-left").forEach((el) => {
     }
   );
 });
-
-import heroImg1 from './assets/431A9412.jpg';
-import heroImg2 from './assets/431A9402.jpg';
-
-const heroTitle = document.querySelector('.hero-title');
-const heroTitle2 = document.querySelector('.hero-title2');
-const hero2 = document.querySelector('.hero2');
-
-heroTitle.style.backgroundImage = `url(${heroImg1})`;
-heroTitle2.style.backgroundImage = `url(${heroImg1})`;
-hero2.style.backgroundImage = `url(${heroImg2})`;

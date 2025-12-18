@@ -49,21 +49,22 @@ html, body {
   position: absolute;
   left: 10%;         /* distance from left edge */
   bottom: 10%; 
-  width: 40%;
 z-index: 0;
+max-width: 300px;
+
 }
 
 .slide-right {
   position: absolute;
-  width: 20%;
+  max-width: 300px;
   right: 10%;        /* distance from right edge */
   top: 10%;  
 }
 
 #right2 {
-  right: 10%;
-  top: 50%;
-  width:40%;
+  right: 5%;
+  top: 65%;
+  width:60%;
 
 }
 

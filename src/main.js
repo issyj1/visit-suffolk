@@ -64,44 +64,46 @@ gsap.utils.toArray(".slide-left").forEach((el) => {
 });
 
 gsap.utils.toArray(".png-anim").forEach((el) => {
-  // Determine horizontal start based on class
-  const startX = el.classList.contains("slide-left") ? -150 : 150;
-  const startY = 50; // starts slightly below and moves up
-
   gsap.fromTo(
     el,
-    { x: startX, y: startY }, // starting position off to side + lower
-    {
-      x: 0,       // natural horizontal position
-      y: 0,       // natural vertical position
-      duration: 1,
+    { y: 100, opacity: 0 }, // start lower
+    { 
+      y: 0, 
+      opacity: 1, 
+      duration: 1.5,
       ease: "power1.out",
       scrollTrigger: {
         trigger: el,
         start: "top 90%",
         end: "bottom 10%",
+        toggleActions: "play reverse play reverse",
         scrub: 0.5
       }
     }
   );
 });
 
+
 const heroTitle = document.querySelector('.hero-title'); 
 const hero2 = document.querySelector('.hero2'); 
 heroTitle.style.backgroundImage = 'url("/visit-suffolk/img/431A9412.jpg")'; 
 hero2.style.backgroundImage = 'url("/visit-suffolk/img/431A9402.jpg")';
 
+import section1Img from './assets/431A9488.jpg';
+import section2Img from './assets/IMG_4379.jpg';
+import section3Img from './assets/IMG_4402.jpg';
+
 document.addEventListener('DOMContentLoaded', () => {
   const sections = [
-    ['section1', '431A9488.jpg'],
-    ['section2', 'IMG_4379.jpg'],
-    ['section3', 'IMG_4402.jpg']
+    ['section1', section1Img],
+    ['section2', section2Img],
+    ['section3', section3Img]
   ];
 
   sections.forEach(([id, img]) => {
     const el = document.getElementById(id);
     if (el) {
-      el.style.backgroundImage = `url("/visit-suffolk/img/${img}")`;
+      el.style.backgroundImage = `url(${img})`;
     }
   });
 });

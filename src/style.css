@@ -195,6 +195,14 @@ border-radius: 40px;
 }
 
 
+.png-anim {
+  width: 300px; /* adjust */
+  max-width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+
+
 @media (max-width: 768px) {
 
 }

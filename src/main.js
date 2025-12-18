@@ -63,6 +63,28 @@ gsap.utils.toArray(".slide-left").forEach((el) => {
   );
 });
 
+gsap.utils.toArray(".png-anim").forEach((el) => {
+  // Determine horizontal start based on class
+  const startX = el.classList.contains("slide-left") ? -150 : 150;
+  const startY = 50; // starts slightly below and moves up
+
+  gsap.fromTo(
+    el,
+    { x: startX, y: startY }, // starting position off to side + lower
+    {
+      x: 0,       // natural horizontal position
+      y: 0,       // natural vertical position
+      duration: 1,
+      ease: "power1.out",
+      scrollTrigger: {
+        trigger: el,
+        start: "top 90%",
+        end: "bottom 10%",
+        scrub: 0.5
+      }
+    }
+  );
+});
 
 const heroTitle = document.querySelector('.hero-title'); 
 const hero2 = document.querySelector('.hero2'); 

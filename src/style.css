@@ -200,7 +200,7 @@ border-radius: 40px;
 
 @media (max-width: 468px) {
   h1 {
-    font-size: 6em;
+    font-size: 5em;
     margin-left: 5%;
     z-index: 100;
     position: absolute;
@@ -215,7 +215,7 @@ border-radius: 40px;
 
   }
   .hero-title {
-    font-size: 6em;
+    font-size: 5em;
   }
   .slide-left {
     position: absolute;
@@ -262,6 +262,13 @@ p {
   top: 35%;             /* distance from bottom of section */
   left: 10%;              /* distance from right edge */
   padding: 15px;
-  max-width: 60%; 
+  max-width: 100%; 
 }
+
+.hero-title, .hero2 {
+  background-attachment: scroll; /* REQUIRED on mobile */
+  background-size: contain;       /* or try 'auto 100%' */
+  background-position: center;
+}
+
 }

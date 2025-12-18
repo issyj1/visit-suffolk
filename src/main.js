@@ -64,31 +64,22 @@ gsap.utils.toArray(".slide-left").forEach((el) => {
 });
 
 
+const heroTitle = document.querySelector('.hero-title'); 
+const hero2 = document.querySelector('.hero2'); 
+heroTitle.style.backgroundImage = 'url("/visit-suffolk/img/431A9412.jpg")'; 
+hero2.style.backgroundImage = 'url("/visit-suffolk/img/431A9402.jpg")';
+
 document.addEventListener('DOMContentLoaded', () => {
-  const heroTitle = document.querySelector('.hero-title');
-  const hero2 = document.querySelector('.hero2');
+  const sections = [
+    ['section1', '431A9488.jpg'],
+    ['section2', 'IMG_4379.jpg'],
+    ['section3', 'IMG_4402.jpg']
+  ];
 
-  if (heroTitle) {
-    heroTitle.style.backgroundImage = 'url("/visit-suffolk/img/431A9412.jpg")';
-  }
-
-  if (hero2) {
-    hero2.style.backgroundImage = 'url("/visit-suffolk/img/431A9402.jpg")';
-  }
-
-  const section1 = document.getElementById('section1');
-  const section2 = document.getElementById('section2');
-  const section3 = document.getElementById('section3');
-
-  if (section1) {
-    section1.style.backgroundImage = 'url("/visit-suffolk/img/431A9488.jpg")';
-  }
-
-  if (section2) {
-    section2.style.backgroundImage = 'url("/visit-suffolk/img/IMG_4379.jpg")';
-  }
-
-  if (section3) {
-    section3.style.backgroundImage = 'url("/visit-suffolk/img/IMG_4402.jpg")';
-  }
+  sections.forEach(([id, img]) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.style.backgroundImage = `url("/visit-suffolk/img/${img}")`;
+    }
+  });
 });

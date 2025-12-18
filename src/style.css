@@ -23,9 +23,7 @@ html, body {
 
 /* Different background colors for each section */
 #section1 { 
-  background-color: #aabac9;
-  
-  background-image: url("/visit-suffolk/img/431A9488.jpg");
+  background-color: #0b2915;
   background-size: cover;
   background-position: center;
   

@@ -90,7 +90,7 @@ heroTitle.style.backgroundImage = 'url("/visit-suffolk/img/431A9412.jpg")';
 hero2.style.backgroundImage = 'url("/visit-suffolk/img/431A9402.jpg")';
 
 import section1Img from './assets/431A9488.jpg';
-import section2Img from './assets/IMG_4379.jpg';
+import section2Img from './assets/431A9488.jpg';
 import section3Img from './assets/IMG_4402.jpg';
 
 document.addEventListener('DOMContentLoaded', () => {

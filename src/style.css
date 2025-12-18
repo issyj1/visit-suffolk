@@ -265,10 +265,10 @@ p {
   max-width: 100%; 
 }
 
-.hero-title, .hero2 {
+.hero-title, .hero2 img {
   background-attachment: scroll; /* REQUIRED on mobile */
-  background-size: contain;       /* or try 'auto 100%' */
-  background-position: center;
+  width: 100%;
 }
+
 
 }

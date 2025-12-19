@@ -249,11 +249,13 @@ border-radius: 40px;
   }
 
   .top-nav {
-    
+    height: 30px;
     font-size: 1em;
   }
 
   .top-nav a {
+    color: white;
+
     line-height: 1;
     font-size: 1em;
 padding-top: 2px;

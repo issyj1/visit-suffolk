@@ -28,12 +28,12 @@ html, body {
   
  } /* teal */
 #section2 { background-color: #2a2b38;
-  background-image: url("/visit-suffolk/img/IMG_4379.jpg");
+  /*background-image: url("/visit-suffolk/img/IMG_4379.jpg");*/
   background-size: cover;
   background-position: center;
  } /* blue */
 #section3 { background-color: #6b8395;
-  background-image: url("/visit-suffolk/img/IMG_4402.jpg");
+  /*background-image: url("/visit-suffolk/img/IMG_4402.jpg");*/
   background-size: cover;
   background-position: center; } /* orange */
 

@@ -33,8 +33,8 @@ gsap.utils.toArray(".slide-left, .slide-right").forEach((el) => {
       immediateRender: false,
       scrollTrigger: {
         trigger: el,
-        start: "top 80%",
-        end: "bottom 20%",
+        start: "top 10%",
+        end: "top 20%",
         toggleActions: "play reverse play reverse",
         scrub: true
       }
@@ -54,8 +54,8 @@ gsap.utils.toArray(".slide-left").forEach((el) => {
       immediateRender: false,
       scrollTrigger: {
         trigger: el,
-        start: "top 80%",
-        end: "bottom 20%",
+        start: "top bottom",
+        end: "top 30%",
         toggleActions: "play reverse play reverse",
         scrub: true
       }
@@ -74,8 +74,8 @@ gsap.utils.toArray(".png-anim").forEach((el) => {
       ease: "power1.out",
       scrollTrigger: {
         trigger: el,
-        start: "top 90%",
-        end: "bottom 10%",
+        start: "top bottom",
+        end: "top 30%",
         toggleActions: "play reverse play reverse",
         scrub: 0.5
       }

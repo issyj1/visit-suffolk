@@ -4,7 +4,6 @@ html, body {
   padding: 0;
   font-family: sans-serif; /* default for body text */
   overflow-x: hidden; /* prevents horizontal scroll */
-  font-family:'Times New Roman', Times, serif;
   box-sizing: border-box;
   background-color: #fafafa;
 
@@ -33,7 +32,7 @@ html, body {
   background-size: cover;
   background-position: center;
  } /* blue */
-#section3 { background-color: #263326;
+#section3 { background-color: #6b8395;
   background-image: url("/visit-suffolk/img/IMG_4402.jpg");
   background-size: cover;
   background-position: center; } /* orange */
@@ -70,7 +69,7 @@ max-width: 300px;
 
 h1 {
   color: rgb(255, 255, 255);
-  font-size: 11em;
+  font-size: 6em;
   margin-left: 5%;
   margin-top: 5%;
   z-index: 100;
@@ -88,7 +87,7 @@ h2 {
   font-family: 'Montserrat'; /* headings use Slabo 27px */
   color: rgb(255, 255, 255);
   font-size: 4em;
-  margin-left: 2%;
+  margin-left: 5%;
 margin-top: 8%;
 z-index: 1000;
 position: relative;
@@ -114,9 +113,10 @@ h4 {
 .textsection {
   position: absolute;       /* absolute positions relative to .section */
   top: 30%;             /* distance from bottom of section */
-  left: 10%;              /* distance from right edge */
-  padding: 15px;
-  max-width: 550px; 
+  left: 5%;              /* distance from right edge */
+  padding: 0px;
+  max-width: 450px; 
+
 }
 
 p {
